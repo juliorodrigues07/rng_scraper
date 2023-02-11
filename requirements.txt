@@ -1,0 +1,3 @@
+selenium==4.8.0
+random-user-agent==1.0.1
+pycryptodomex==3.17
