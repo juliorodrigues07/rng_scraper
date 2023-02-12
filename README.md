@@ -30,5 +30,5 @@ Cryptographically secure random number scrapper built utilizing Selenium library
 
 # Notes
 
-- The Selenium library requires the setup of environment variables, as also the download of a driver accordingly to version and browser utilized.
+- The Selenium library requires the setup of environment variables, as also the download of a driver accordingly to browser version and it's engine.
 - That driver must be put in the directory setted by the environment variable before running the script, as well as changing it's value if necessary.
