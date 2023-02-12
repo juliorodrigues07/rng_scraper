@@ -6,21 +6,21 @@ Cryptographically secure random number scrapper built utilizing Selenium library
 
 # Requirements
 
-- [Selenium](https://www.selenium.dev/pt-br/documentation/) library
+- [Selenium](https://www.selenium.dev/pt-br/documentation/) library:
 
-    pip install selenium
+      pip install selenium
       
-- [Random User Agents](https://pypi.org/project/random-user-agent/) library
+- [Random User Agents](https://pypi.org/project/random-user-agent/) library:
  
-    pip install random_user_agent
+      pip install random_user_agent
        
-- [PyCryptodome](https://pycryptodome.readthedocs.io/en/latest/src/introduction.html) library
+- [PyCryptodome](https://pycryptodome.readthedocs.io/en/latest/src/introduction.html) library:
  
-    pip install pycryptodomex
+      pip install pycryptodomex
        
 - To install all dependencies:
 
-    ./install_dependencies.sh
+      ./install_dependencies.sh
        
 
 # Execution
