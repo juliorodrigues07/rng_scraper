@@ -36,7 +36,7 @@ def initialize_browser():
     fox_profile.add_argument("--height=600")
 
     # Requests as a distinct user-agent on each request to avoid IP block
-    fox_profile.set_preference('general.useragent.override', user_agent_rotator.get_random_user_agent)
+    fox_profile.set_preference('general.useragent.override', user_agent_rotator.get_random_user_agent())
     my_browser = webdriver.Firefox()
 
     # Requests the page and awaits it's loading
@@ -65,7 +65,7 @@ def auto_generation(my_browser):
     min_field.send_keys(min)
     max_field.send_keys(max)
 
-    # Amount of numbers to be generated is defined randomly on each request (website limit -> 1000)
+    # Amount of numbers to be generated is defined randomly on each request (website limit -> 1000), again to avoid IP block
     n = random.randint(1, 1000)
     qtt_field.send_keys(n)
 
@@ -86,6 +86,8 @@ def randomness_evaluation():
     
     print('Initializing...\n')
     all_numbers = list()
+
+    # Start browser
     my_browser = initialize_browser()
 
     # Until enough number are generated
@@ -103,6 +105,7 @@ def randomness_evaluation():
         timing = random.randint(2, 4)
         sleep(timing)
 
+    # Kill browser
     my_browser.close()
 
     # Result
