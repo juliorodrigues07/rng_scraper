@@ -25,10 +25,10 @@ Cryptographically secure random number scrapper built utilizing Selenium library
 
 # Execution
 
-    python3 scrapper.py
+    python3 run.py
 
 
 # Notes
 
 - The Selenium library requires the setup of environment variables, as also the download of a driver accordingly to browser version and it's engine.
-- That driver must be put in the directory setted by the environment variable before running the script, as well as changing it's value if necessary.
+- That driver must be put in the directory setted by the environment variable before running the script, as well as changing it's value (directory path) in the code if necessary.
