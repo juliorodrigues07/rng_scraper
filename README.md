@@ -2,7 +2,7 @@
 
 # RNG Scrapper 
 
-Cryptographically secure random number scrapper built utilizing Selenium library.
+Cryptographically secure random number scraper built utilizing Selenium library.
 
 # Requirements
 
